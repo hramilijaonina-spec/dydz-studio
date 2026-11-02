@@ -21,6 +21,7 @@ Depuis la version 2.0, l'app reprend toutes les fonctions de UP Slatebook, avec 
 - **Versions** : badge v1, v2… ; « Nouvelle version » avec une note ; sauvegarde automatique après chaque série de modifications ; retour à une version en un clic (l'état d'avant reste dans la liste) ; suppression d'une version.
 - **Clap numérique** pour le tournage sur téléphone.
 - Temps réel pour toute l'équipe ; connexion avec Google ou par lien e-mail ; hors ligne ; sauvegarde du projet en fichier.
+- Présence de l'équipe : l'avatar de chaque membre apparaît sur l'onglet où il se trouve (il clignote quand il modifie) ; dans le découpage, un cadre lumineux à sa couleur entoure le plan qu'il modifie ; dans le scénario, la scène qu'il écrit.
 
 ## Revue ergonomique (v1.18 · Dydz 2.8)
 
