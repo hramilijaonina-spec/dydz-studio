@@ -1032,21 +1032,21 @@ table.dct{min-width:1180px;width:100%;border-collapse:collapse;font-size:13.5px}
 const CATS=[
  {id:"cast",label:"Rôles",color:"#d64545"},
  {id:"extras",label:"Figurants",color:"#2f9e5a"},
- {id:"stunts",label:"Cascades",color:"#e07a1f"},
- {id:"vehicles",label:"Véhicules",color:"#d14f9a"},
- {id:"animals",label:"Animaux",color:"#a8613b"},
  {id:"props",label:"Accessoires",color:"#7c4dd6"},
- {id:"setdress",label:"Décor",color:"#6f8f1f"},
  {id:"wardrobe",label:"Costumes",color:"#1f8fa3"},
  {id:"makeup",label:"Maquillage / coiffure",color:"#e2558a"},
+ {id:"setdress",label:"Décor",color:"#6f8f1f"},
+ {id:"vehicles",label:"Véhicules",color:"#d14f9a"},
+ {id:"stunts",label:"Cascades",color:"#e07a1f"},
  {id:"sfx",label:"Effets spéciaux",color:"#2f66d6"},
  {id:"vfx",label:"Effets visuels",color:"#0f9c8c"},
  {id:"sound",label:"Son / musique",color:"#8a6a2a"},
  {id:"equipment",label:"Matériel spécial",color:"#5d6b7a"},
+ {id:"animals",label:"Animaux",color:"#a8613b"},
 ];
 const CAT=Object.fromEntries(CATS.map(c=>[c.id,c]));
-/* Version : 1.0 dépouillement · 1.1 plan de travail · 1.2 hors ligne et sauvegarde · 1.3 import .sbx · 1.4 éditeur de scénario · 1.5 boutons de mise en forme · 1.6 couleurs des boutons · 1.7 suppression de projet réservée à l'administrateur · 1.8 mise en page scénario dans le dépouillement · 1.9 connexion par lien e-mail · 1.10 demandes d'accès · 1.11 rôles lecteur, commentateur, éditeur · 1.12 barre d'onglets · 2.0 reprise de UP Slatebook : menu, onglets intercalaires, découpage technique, épisodes séparés, Dydz, export PDF et PowerPoint, annuler et rétablir, versions et sauvegarde automatique, clap numérique, recherche des éléments, thème gris sombre et jaune · 2.1 DDC Breakdown devient Dydz Studio · 2.2 liste des scènes en menu déroulant sur téléphone · 2.2.1 scénario sur fond clair dans le dépouillement · 2.3 import des scénarios en prose, plans faits et scènes tournées · 2.4 plan de travail en journées repliables · 2.5 menu du plan de travail · 2.6 « Proposer un plan » garde ce qui est tourné · 2.6.1 numéros de scène à l export · 2.7 menu Accueil et Projet, page d accueil, boutons sobres, PDF du scénario · 2.8 revue : téléphone, recherche, écran Exporter, annuler partout, durée, avancement, photos dans l historique · 2.8.1 navigation entre scènes du découpage sur téléphone · 2.8.2 découpage en tableau aussi sur téléphone · 2.8.3 édition stable dans le découpage · 2.9 récapitulatif du dépouillement · 2.10 présence des membres (onglets, plan, scène) · 2.10.1 relancer l IA met le dépouillement à jour · 2.11 historique rangé par version, les anciennes versions restent · 2.12 annuler et rétablir dans le scénario et partout */
-const APP_VERSION="2.12";const APP_DATE="2 nov. 2026";
+/* Version : 1.0 dépouillement · 1.1 plan de travail · 1.2 hors ligne et sauvegarde · 1.3 import .sbx · 1.4 éditeur de scénario · 1.5 boutons de mise en forme · 1.6 couleurs des boutons · 1.7 suppression de projet réservée à l'administrateur · 1.8 mise en page scénario dans le dépouillement · 1.9 connexion par lien e-mail · 1.10 demandes d'accès · 1.11 rôles lecteur, commentateur, éditeur · 1.12 barre d'onglets · 2.0 reprise de UP Slatebook : menu, onglets intercalaires, découpage technique, épisodes séparés, Dydz, export PDF et PowerPoint, annuler et rétablir, versions et sauvegarde automatique, clap numérique, recherche des éléments, thème gris sombre et jaune · 2.1 DDC Breakdown devient Dydz Studio · 2.2 liste des scènes en menu déroulant sur téléphone · 2.2.1 scénario sur fond clair dans le dépouillement · 2.3 import des scénarios en prose, plans faits et scènes tournées · 2.4 plan de travail en journées repliables · 2.5 menu du plan de travail · 2.6 « Proposer un plan » garde ce qui est tourné · 2.6.1 numéros de scène à l export · 2.7 menu Accueil et Projet, page d accueil, boutons sobres, PDF du scénario · 2.8 revue : téléphone, recherche, écran Exporter, annuler partout, durée, avancement, photos dans l historique · 2.8.1 navigation entre scènes du découpage sur téléphone · 2.8.2 découpage en tableau aussi sur téléphone · 2.8.3 édition stable dans le découpage · 2.9 récapitulatif du dépouillement · 2.10 présence des membres (onglets, plan, scène) · 2.10.1 relancer l IA met le dépouillement à jour · 2.11 historique rangé par version, les anciennes versions restent · 2.12 annuler et rétablir dans le scénario et partout · 2.12.1 nouvel ordre des catégories du dépouillement */
+const APP_VERSION="2.12.1";const APP_DATE="2 nov. 2026";
 const STATUS={todo:"À analyser",ai:"À vérifier",ok:"Vérifiée"};
 const BANDS={"INT-J":["var(--strip-intj)","Int. jour"],"EXT-J":["var(--strip-extj)","Ext. jour"],"INT-N":["var(--strip-intn)","Int. nuit"],"EXT-N":["var(--strip-extn)","Ext. nuit"]};
 
