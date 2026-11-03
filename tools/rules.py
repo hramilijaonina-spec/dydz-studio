@@ -22,6 +22,7 @@ def section(root):
         "presence": {".read": member, ".write": member},
         "locks": {".read": member, ".write": editor},
         "secrets": {".read": editor, ".write": admin},
+        "notify": {".read": V, ".write": admin},   # canal ntfy des notifications de demandes : lu par le demandeur connecté
         "requests": {".read": admin, ".write": admin,
                      "$key": {".read": f"{V} && {KEY} == $key",
                               ".write": f"{V} && {KEY} == $key && (!newData.exists() || newData.child('email').val() == auth.token.email.toLowerCase())"}},
